@@ -1,0 +1,29 @@
+5. 
+Plotting with Matplotlib
+***************** Quzi 1 *****************
+Q1. Visualization is a very powerful tool for exploring your data and reporting results. correct
+
+Q2. import matplotlib.pyplot as plt
+
+Q3. The values in a are mapped onto the horizontal axis.
+	The values in b are mapped onto the vertical axis.
+
+Q4. Change plot() in plt.plot() to scatter().
+
+
+Quiz
+***************** Quzi 2 *****************
+Q1. Histogram is a great tool for getting a first impression about the distribution of your data.
+
+Q2. 4
+
+Q3. Add a second argument to plt.hist(): plt.hist(x, bins = 4) 
+
+
+
+***************** Quzi 3  Knowledge Checks *****************
+Q1.  xlabel("x-axis title") and ylabel("y-axis title") 
+
+Q2. fill_between() 
+
+Q3. Python doesn't throw an error, but you won't see your customizations. The show() function displays the plot you've built up until then. If the customizations come afterwards, there is no effect on the shown output. correct
