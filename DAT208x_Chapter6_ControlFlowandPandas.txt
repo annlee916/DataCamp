@@ -1,0 +1,169 @@
+Boolean Logic & Control Flow
+
+#Q1   Equality
+# Comparison of booleans
+
+print(True == False)
+
+
+# Comparison of integers
+
+print((-5*15) != 75)
+
+
+# Comparison of strings
+
+print("pyscript" == "PyScript")
+# Compare a boolean with an integer
+
+print(True == 1)
+
+#Q2. Greater and less than
+# Comparison of booleans
+print(x>= -10)
+
+print("test"<=y)
+
+print(True>False)
+
+
+#Q3. and, or, not (1)
+# Define variables
+my_kitchen = 18.0
+your_kitchen = 14.0
+
+# my_kitchen bigger than 10 and smaller than 18?
+print(my_kitchen>10 and my_kitchen<18)
+
+# my_kitchen smaller than 14 or bigger than 17?
+print(my_kitchen>17 or my_kitchen<14)
+
+# Double my_kitchen smaller than triple your_kitchen?
+print(my_kitchen*2<your_kitchen*3)
+
+
+#Q4. and, or, not (2)
+false
+		x = 8
+		y = 9
+		not(not(x < 3) and not(y > 14 or y > 10))
+
+
+#Q5. Warmup
+medium
+
+area = 10.0
+if(area < 9) :
+    print("small")
+elif(area < 12) :
+    print("medium")
+else :
+    print("large")
+
+#Q6. If
+# Define variables
+room = "kit"
+area = 14.0
+
+# if statement for room
+if room == "kit" :
+    print("looking around in the kitchen.")
+
+# if statement for area
+if area >15:
+    print("big place!")
+
+#Q7. Add else
+# Define variables
+room = "kit"
+area = 14.0
+
+# if-else construct for room
+if room == "kit" :
+    print("looking around in the kitchen.")
+else :
+    print("looking around elsewhere.")
+
+# if-else construct for area
+if area > 15 :
+    print("big place!")
+else:
+    print("pretty small.")
+
+#Q8. Customize further: elif
+# Define variables
+room = "bed"
+area = 14.0
+
+# if-elif-else construct for room
+if room == "kit" :
+    print("looking around in the kitchen.")
+elif room == "bed":
+    print("looking around in the bedroom.")
+else :
+    print("looking around elsewhere.")
+
+# if-elif-else construct for area
+if area > 15 :
+    print("big place!")
+elif area > 10:
+    print("medium size, nice!")
+else :
+    print("pretty small.")
+
+##========================================
+#Panda
+#Q1. CSV to DataFrame (1)
+# Import pandas as pd
+import pandas as pd
+
+# Import the cars.csv data: cars
+cars=pd.read_csv("cars.csv")
+
+# Print out cars
+print(cars)
+
+
+#Q2. CSV to DataFrame (2)
+# Import pandas as pd
+import pandas as pd
+
+# Fix import by including index_col
+cars = pd.read_csv('cars.csv', index_col=0)
+
+# Print out cars
+print(cars)
+
+#Q3. Square Brackets
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Print out country column as Pandas Series
+print(cars['country'])
+
+# Print out country column as Pandas DataFrame
+print(cars[['country']])
+
+
+#Q4. loc(1)
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Print out observation for Japan
+print(cars.loc['JAP'])
+
+# Print out observations for Australia and Egypt
+print(cars.loc[['AUS', 'EG']])
+
+#Q5. loc(2)
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Print out drives_right value of Morocco
+print(cars.loc['MOR']['drives_right'])
+
+# Print sub-DataFrame
+print(cars.loc[['RU', 'MOR'],['country','drives_right']])
