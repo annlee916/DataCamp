@@ -1,0 +1,30 @@
+6. Control Flow and Pandas
+***************** Quzi 1 *****************
+Q1. 5>=5 (TRUE)
+Q2. 4!=4 (FALSE)
+Q3. The and operator returns True only if both operands are True
+Q4. The or operator returns True if at least one of the operands is True. correct
+Q5. Low
+x = 5
+if x > 6 :
+    print("high")
+else :
+    print("low")
+
+Q6. High
+x = 7
+if x > 6 :
+    print("high")
+elif x > 3 :
+    print("ok")
+else :
+    print("low")
+
+***************** Quzi 2 *****************
+Panda
+
+Q1. In Pandas, different columns can contain different types. correct
+Q2. The rows correspond to observations.
+    The columns correspond to variables.
+Q3. read_csv()
+Q4. loc
