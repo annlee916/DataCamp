@@ -1,0 +1,22 @@
+
+#=====Read and explore your data
+
+# Import pandas 
+import pandas as pd
+
+# Use pandas to read in recent_grads_url
+recent_grads = pd.read_csv(recent_grads_url)
+
+# Print the shape
+print(recent_grads.shape)
+
+
+#======Exploring Your Data
+# Print .dtypes
+print(recent_grads.dtypes)
+
+# Output summary statistics
+print(recent_grads.describe())
+
+# Exclude data of type object
+print(recent_grads.describe(include=['object']))
